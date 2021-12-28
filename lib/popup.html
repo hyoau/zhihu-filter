@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+    body {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    div {
+        border-bottom: 1px solid #FAFAFA;
+        padding-bottom: 2px;
+    }
+
+    ul {
+        padding-left: 0;
+        max-height: 200px;
+    }
+
+    #stupids {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+</style>
+
+<body>
+    <div>
+        <input id="anonymity-filter" type="checkbox" name="anonymity-filter" value="filter" />&nbsp;过滤匿名用户
+    </div>
+    <div>
+        <p id="stupid-list-info">黑名单</p>
+        <ul id="stupids">
+        </ul>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
